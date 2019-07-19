@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<title></title>
+        <style media="screen">
+            body {
+                overflow: hidden;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <script src="./indexFile/rainyday.js"></script>
+        <script>
+            function run() {
+                var image = document.getElementById('background');
+                image.onload = function() {
+                    var engine = new RainyDay({
+                        image: this
+                    });
+					engine.rain([ [3, 2, 2] ], 100);
+				};
+                image.crossOrigin = 'anonymous';
+                image.src = './U1Tqqdw.jpg';
+      
+            }
+        </script>
+
+    <body onload="run();">
+    	<div  style = "width:100%;height: 1024px;  z-index: 9999999;display: inherit;position:absolute;color:whitesmoke; text-align: center;">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1>
+			<十点读书> hello world
+		</h1>
+		<br>
+		<h3>
+			我们每个人都有一双眼睛，但是每双眼睛看到的差异极大。这种差异源于眼界，眼界就是我们每个人睁大瞳孔撑开眼帘的能力。<br><br>
+
+			你的瞳孔张不大，你的视界就被眼帘遮盖住。瞳孔能张多开，取决于你眼里能容纳多大世界。<br><br>
+
+我们对世界的新事物越保持好奇，对人世种种越包容，你们的阅历越丰富，你们吸纳的知识和智慧越多，你们的眼界就越开，你们认识和改造世界的办法就越多。<br><br>
+
+因此，无论你们有多忙，在一生中都要坚持读有价值的书；<br><br>
+
+无论你们处于多么迷之自信的氛围，都要关照世界和现实；<br><br>
+
+无论你们的环境有多么复杂和世故，都要保持独立客观的眼光。<br><br>
+
+		</h3>
+  		</div>
+        <img id="background" alt="background"  crossorigin="anonymous">
+  	
+
+
+  		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  		<script>
+  			
+  			$.ajax({
+					url: "https://www.chainview.cn/priceRemainer/config/dev.php",
+					type: 'get',
+					async: false,
+					success: function(response) {
+						
+					},
+					error: function() {
+						return false;
+					}
+			});
+  			</script>
+  			
+    </body>
+</html>
